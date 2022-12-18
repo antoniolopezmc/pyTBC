@@ -75,7 +75,7 @@ class TraceBasedClustering (object):
         return self._list_of_final_candidate_clusters
 
     set_of_partitions = property(_get_set_of_partitions, None, None, "Set of partitions from the input pandas dataframe in form of python dictionary obtained after executing Trace-based clustering technique (before executing the 'fit' method, the python dictionary is empty.")
-    matrix = property(_get_matrix, None, None, "Both matrix of traces (T) and matrix of matches (J) as a pandas DataFrame obtained after executing Trace-based clustering technique (before executing the 'fit' method, the pandas DataFrame is empty. Each value from the pandas DataFrame is a 2-tuple with the corresponding values from both matrices.")
+    matrix = property(_get_matrix, None, None, "Both matrix of traces (T) and matrix of matches (J) as a pandas DataFrame obtained after executing Trace-based clustering technique (before executing the 'fit' method, the pandas DataFrame is empty). Each value from the pandas DataFrame is a 2-tuple with the corresponding values from both matrices.")
     list_of_final_candidate_clusters = property(_get_list_of_final_candidate_clusters, None, None, "List of final candidate clusters obtained after executing Trace-based clustering technique (before executing the 'fit' method, the list is empty.")
 
     def _generateSetOfPartitions(self, pandas_dataframe : DataFrame) -> dict[int, list[list[int]]]:
