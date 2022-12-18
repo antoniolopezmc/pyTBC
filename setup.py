@@ -27,7 +27,7 @@ class clean_pycache(Command):
 class custom_clean_command(clean):
     """Custom 'clean' command.
     
-    This version of the 'clean' command also removes the following directories: "./build", "./dist" and "./tbc.egg-info".
+    This version of the 'clean' command also removes the following directories: "./build", "./dist" and "./pyTBC.egg-info".
     """
     
     def run(self):
@@ -37,8 +37,8 @@ class custom_clean_command(clean):
             shutil.rmtree("build")
         if os.path.isdir("dist"):
             shutil.rmtree("dist")
-        if os.path.isdir("tbc.egg-info"):
-            shutil.rmtree("tbc.egg-info")
+        if os.path.isdir("pyTBC.egg-info"):
+            shutil.rmtree("pyTBC.egg-info")
 
 # Entry point of the python script.
 if __name__ == "__main__":

@@ -1,15 +1,15 @@
-# tbc python library
+# pyTBC
 
-tbc is a python library which implements Trace-based clustering technique [1].
+pyTBC is a python library which implements Trace-based clustering technique [1].
 
 ## Installation
 
-The source code is currently hosted on: https://github.com/antoniolopezmc/tbc
+The source code is currently hosted on: https://github.com/antoniolopezmc/pyTBC
 
-To install tbc library from pip, it is neccesary to execute:
+To install pyTBC library from pip, it is neccesary to execute:
 
 ```sh
-pip install tbc
+pip install pyTBC
 ```
 
 ## Generating the documentation
